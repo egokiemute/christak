@@ -13271,12 +13271,6 @@ span.select2-selection.select2-selection--single:focus {
 .donation-card .donation-card-content .donation-card-title a:hover {
   color: var(--theme-color);
 }
-.donation-card .donation-card-content .donation-card-text {
-  margin-bottom: 25px;
-}
-.donation-card .donation-card-content .skill-feature {
-  margin-bottom: 5px;
-}
 .donation-card .donation-card-content .donate-price-innter {
   display: flex;
   justify-content: space-between;
@@ -13585,7 +13579,7 @@ span.select2-selection.select2-selection--single:focus {
   background: var(--white-color);
   border-radius: 15px;
   text-align: center;
-  padding: 50px 0 0;
+  padding: 0px 0 0;
   overflow: hidden;
 }
 .service-card_icon {
@@ -13601,11 +13595,11 @@ span.select2-selection.select2-selection--single:focus {
   transition: 0.4s;
 }
 .service-card_content {
-  padding: 0 30px 48px;
+  padding: 30px 30px;
 }
 .service-card_title {
   margin-top: -0.3em;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   font-size: 22px;
 }
 .service-card_title a {
@@ -13614,7 +13608,7 @@ span.select2-selection.select2-selection--single:focus {
 .service-card_text {
   font-size: 16px;
   line-height: 30px;
-  margin-bottom: -0.4em;
+  /* margin-bottom: -1.5em; */
 }
 .service-card_img {
   position: relative;
@@ -17751,3 +17745,12 @@ span.select2-selection.select2-selection--single:focus {
     text-align: right;
   }
 }
+
+.active-bg {
+  background-color: #27bd21!important;
+  color: #fff!important;
+}
+
+/* .hidden {
+  display: none;
+} */
