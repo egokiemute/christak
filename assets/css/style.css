@@ -10403,6 +10403,9 @@ span.select2-selection.select2-selection--single:focus {
 .contact-info .contact-info_icon {
   flex: none;
 }
+.contact-info .contact-info_icon  {
+  color: #1636d6;
+}
 .contact-info .contact-info_title {
   font-size: 24px;
   line-height: 34px;
@@ -10688,7 +10691,7 @@ span.select2-selection.select2-selection--single:focus {
   background: var(--smoke-color);
   border-radius: 15px;
   margin-top: 40px;
-  padding: 0px 30px 22px;
+  padding: 22px 30px 22px;
 }
 .about-box-wrap .about-box-icon {
   width: 60px;
@@ -13583,6 +13586,12 @@ span.select2-selection.select2-selection--single:focus {
 
 /*------------------- 4.00. Donation -------------------*/
 /* Donation 1 ---------------------------------- */
+.service-area-3 .donation-card {
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  height: 580px;
+}
 .donation-card {
   border-radius: 15px;
   overflow: hidden;
@@ -18184,7 +18193,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .active-bg {
-  background-color: #27bd21 !important;
+  background-color: #1636d6 !important;
   color: #fff !important;
 }
 
