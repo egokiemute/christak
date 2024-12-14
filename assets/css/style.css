@@ -13940,6 +13940,7 @@ span.select2-selection.select2-selection--single:focus {
   text-align: center;
   padding: 0px 0 0;
   overflow: hidden;
+  height: 560px;
 }
 .service-card_icon {
   height: 100px;
