@@ -70,7 +70,7 @@
     ==============================-->
     <div class="preloader">
       <div class="preloader-inner">
-        <img src="../assets/img/logo2.svg" alt="Christak" />
+        <img src="../assets/img/logo4.png" alt="Christak" />
         <span class="loader"></span>
       </div>
     </div>
@@ -83,7 +83,7 @@
         <div class="widget footer-widget">
           <div class="widget-about">
             <div class="footer-logo">
-              <a href="/"><img src="assets/img/logo2.svg" alt="Christak" /></a>
+              <a href="/"><img src="assets/img/logo4.png" alt="Christak" /></a>
             </div>
 
             <div class="social-btn style2">
@@ -105,7 +105,7 @@
           <ul class="menu">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/services/">Services</a></li>
-            
+
             <li><a href="/contact/">Contact Us</a></li>
           </ul>
         </div>
@@ -118,7 +118,7 @@
       <div class="mobile-menu-area text-center">
         <button class="menu-toggle"><i class="fas fa-times"></i></button>
         <div class="mobile-logo">
-          <a href="/"><img src="../assets/img/logo2.svg" alt="Christak" /></a>
+          <a href="/"><img src="../assets/img/logo4.png" alt="Christak" /></a>
         </div>
         <div class="mobile-menu">
           <ul>
@@ -194,7 +194,7 @@
               <div class="col-auto">
                 <div class="header-logo">
                   <a href="/"
-                    ><img src="../assets/img/logo2.svg" alt="logo"
+                    ><img src="../assets/img/logo4.png" alt="logo"
                   /></a>
                 </div>
               </div>
@@ -312,7 +312,15 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="contact-map-sec">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3428774270315!2d0.1650550766507677!3d51.52527067181744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a5a120bde1fb%3A0x65d04bc29bf23cd5!2sValentines%20House!5e0!3m2!1sen!2sng!4v1734083304639!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.3428774270315!2d0.1650550766507677!3d51.52527067181744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a5a120bde1fb%3A0x65d04bc29bf23cd5!2sValentines%20House!5e0!3m2!1sen!2sng!4v1734083304639!5m2!1sen!2sng"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="col-lg-6">
@@ -321,12 +329,22 @@
                 <span class="sub-title">TALK TO US</span>
                 <h2 class="sec-title">Do you have any question?</h2>
               </div>
-              <form
-                action="https://tfhtml.themepul.com/Christak/demo/mail.php"
-                method="POST"
-                class="contact-form ajax-contact"
-              >
+              <form class="contact-form" onsubmit="handleFormSubmit(event)">
                 <div class="row">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="c7e7187d-df62-4f45-bac1-f175d4c55234"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="-- Contact Us Form --"
+                  />
+                  <div class="mb-3">
+                    <div id="success-message" class="d-none"></div>
+                    <div id="error-message" class="d-none"></div>
+                  </div>
                   <div class="col-lg-6">
                     <div class="form-group">
                       <input
@@ -366,14 +384,21 @@
                         name="subject"
                         id="subject"
                         class="form-select style-border"
+                        required
                       >
                         <option value="" disabled selected hidden>
-                          Subject
+                          What Service?
                         </option>
-                        <option value="Construction">Construction</option>
-                        <option value="Real Estate">Real Estate</option>
-                        <option value="Industry">Industry</option>
-                        <option value="Architect">Architect</option>
+                        <option value="Airbnb Service">Airbnb Service</option>
+                        <option value="Logistics Service">
+                          Logistics Service
+                        </option>
+                        <option value="Cleaning Service">
+                          Cleaning Service
+                        </option>
+                        <option value="Healthcare Service">
+                          Healthcare Service
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -382,9 +407,9 @@
                       <input
                         type="text"
                         class="form-control style-border"
-                        name="service"
-                        id="service"
-                        placeholder="Service"
+                        name="subject"
+                        id="subject"
+                        placeholder="Subject"
                       />
                     </div>
                   </div>
@@ -483,11 +508,15 @@
                 <div class="widget-about">
                   <div class="footer-logo">
                     <a href="index.html"
-                      ><img src="../assets/img/logo4.svg" alt="Christak"
+                      ><img src="../assets/img/logo4.png" alt="Christak"
                     /></a>
                   </div>
                   <p class="about-text">
-                    Christak is your trusted partner for a wide range of services. From providing compassionate care and support to individuals, to maintaining pristine clean spaces, and optimizing complex supply chains, we're committed to delivering excellence.
+                    Christak is your trusted partner for a wide range of
+                    services. From providing compassionate care and support to
+                    individuals, to maintaining pristine clean spaces, and
+                    optimizing complex supply chains, we're committed to
+                    delivering excellence.
                   </p>
                   <div class="social-btn style2">
                     <a href="https://facebook.com/" tabindex="0"
@@ -541,7 +570,24 @@
                   Your opinion is important to us. So contact us for any
                   service.
                 </p>
-                <form class="newsletter-form">
+                <form
+                  class="newsletter-form"
+                  onsubmit="handleFormSubmit(event)"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="c7e7187d-df62-4f45-bac1-f175d4c55234"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="-- New Newsletter Subscriber --"
+                  />
+                  <div class="mb-3">
+                    <div id="success-message" class="d-none"></div>
+                    <div id="error-message" class="d-none"></div>
+                  </div>
                   <div class="form-group">
                     <input
                       class="form-control"
@@ -619,5 +665,6 @@
 
     <!-- Main Js File -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/contact-form.js"></script>
   </body>
 </html>

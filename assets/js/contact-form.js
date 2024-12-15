@@ -11,19 +11,6 @@ async function handleFormSubmit(e) {
     successMessage.classList.add("d-none");
     errorMessage.classList.add("d-none");
 
-    // Safely retrieve and validate each field
-    const name = formData.get("name")?.trim() || "";
-    const email = formData.get("email")?.trim() || "";
-    // const phone = formData.get("phone")?.trim() || "";
-    const serviceType = formData.get("serviceType") || "0";
-    const message = formData.get("message")?.trim() || "";
-
-    if (!name || !email || serviceType === "0" || !message) {
-        errorMessage.textContent = "Please fill in all required fields.";
-        errorMessage.classList.remove("d-none");
-        return;
-    }
-
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",

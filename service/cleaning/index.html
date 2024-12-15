@@ -70,7 +70,7 @@
     ==============================-->
     <div class="preloader">
       <div class="preloader-inner">
-        <img src="../../assets/img/logo2.svg" alt="Christak" />
+        <img src="../../assets/img/logo4.png" alt="Christak" />
         <span class="loader"></span>
       </div>
     </div>
@@ -84,7 +84,7 @@
           <div class="widget-about">
             <div class="footer-logo">
               <a href="/"
-                ><img src="../../assets/img/logo2.svg" alt="Christak"
+                ><img src="../../assets/img/logo4.png" alt="Christak"
               /></a>
             </div>
 
@@ -120,7 +120,7 @@
         <button class="menu-toggle"><i class="fas fa-times"></i></button>
         <div class="mobile-logo">
           <a href="/"
-            ><img src="../../assets/img/logo2.svg" alt="Christak"
+            ><img src="../../assets/img/logo4.png" alt="Christak"
           /></a>
         </div>
         <div class="mobile-menu">
@@ -197,7 +197,7 @@
               <div class="col-auto">
                 <div class="header-logo">
                   <a href="/"
-                    ><img src="../../assets/img/logo2.svg" alt="logo"
+                    ><img src="../../assets/img/logo4.png" alt="logo"
                   /></a>
                 </div>
               </div>
@@ -315,7 +315,8 @@
                             <i class="fas fa-check-circle"></i>Airbnb Cleaning
                           </li>
                           <li>
-                            <i class="fas fa-check-circle"></i>End-of-tenancy Cleaning
+                            <i class="fas fa-check-circle"></i>End-of-tenancy
+                            Cleaning
                           </li>
                         </ul>
                       </div>
@@ -334,7 +335,7 @@
                     <input
                       type="hidden"
                       name="access_key"
-                      value="dff654e7-a116-4af4-bf4b-096c"
+                      value="c7e7187d-df62-4f45-bac1-f175d4c55234"
                     />
                     <input
                       type="hidden"
@@ -542,7 +543,7 @@
                 <div class="widget-about">
                   <div class="footer-logo">
                     <a href="/"
-                      ><img src="../../assets/img/logo4.svg" alt="Christak"
+                      ><img src="../../assets/img/logo4.png" alt="Christak"
                     /></a>
                   </div>
                   <p class="about-text">
@@ -604,7 +605,24 @@
                   Your opinion is important to us. So contact us for any
                   service.
                 </p>
-                <form class="newsletter-form">
+                <form
+                  class="newsletter-form"
+                  onsubmit="handleFormSubmit(event)"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="c7e7187d-df62-4f45-bac1-f175d4c55234"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="-- New Newsletter Subscriber --"
+                  />
+                  <div class="mb-3">
+                    <div id="success-message" class="d-none"></div>
+                    <div id="error-message" class="d-none"></div>
+                  </div>
                   <div class="form-group">
                     <input
                       class="form-control"

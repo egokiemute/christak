@@ -1829,6 +1829,8 @@ textarea.is-invalid {
   text-align: center;
   background-color: var(--white-color);
   border-bottom: 1px solid var(--border-color);
+  width: 120px;
+  height: auto;
 }
 .mobile-menu-wrapper .mobile-logo svg {
   max-width: 185px;
@@ -1999,6 +2001,8 @@ textarea.is-invalid {
 .preloader-inner img {
   display: block;
   margin: 0 auto 30px auto;
+  width: 120px;
+  height: auto;
 }
 
 .loader,
@@ -5185,6 +5189,8 @@ ul.wp-block-latest-posts li:last-child {
 
 .widget-about .footer-logo {
   margin-bottom: 37px;
+  width: 120px;
+  height: auto;
 }
 .widget-about .about-text {
   max-width: 350px;
@@ -5600,6 +5606,8 @@ ul.wp-block-latest-posts li:last-child {
 .header-logo {
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 120px;
+  height: auto;
 }
 
 .header-links > ul {
