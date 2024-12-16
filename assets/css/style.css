@@ -1146,10 +1146,10 @@ input {
   height: 58px;
   padding: 0 30px;
   border: 1px solid transparent;
-  color: var(--body-color);
+  color: var(--input-color);
   background-color: var(--smoke-color);
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 600;
   width: 100%;
   font-family: var(--body-font);
   transition: 0.4s ease-in-out;
