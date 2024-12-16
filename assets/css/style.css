@@ -6189,6 +6189,7 @@ ul.wp-block-latest-posts li:last-child {
   background: var(--theme-color);
   border-radius: 20px;
   gap: 15px;
+  height: 140px;
 }
 .footer-layout1 .footer-top .info-card .info-card_icon {
   height: 55px;
@@ -13607,7 +13608,7 @@ span.select2-selection.select2-selection--single:focus {
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid var(--border-color);
-  height: 520px;
+  height: 500px;
 }
 .donation-card .donation-card-img {
   overflow: hidden;
